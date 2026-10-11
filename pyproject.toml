@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sorter-lab"
+version = "0.1.0"
+description = "A deterministic digital twin and PLC training simulator for a small automated sorting line."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Sorter Lab contributors" }]
+keywords = ["industrial-automation", "plc", "digital-twin", "simulation", "education"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Education",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Education",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = []
+
+[project.scripts]
+sorter-lab = "sorter_lab.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+sorter_lab = ["static/*.html"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
