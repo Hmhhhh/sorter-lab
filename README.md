@@ -11,7 +11,7 @@ Sorter Lab models a two-product conveyor sorting station as a discrete-time proc
 ## See it run
 
 ```console
-git clone https://github.com/YOUR-USERNAME/sorter-lab.git
+git clone https://github.com/Hmhhhh/sorter-lab.git
 cd sorter-lab
 python -m venv .venv
 # Windows: .venv\Scripts\activate

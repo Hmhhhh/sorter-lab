@@ -9,7 +9,7 @@ Sorter Lab 是一个可复现的 PLC 控制输送分拣线仿真项目，面向�
 ## 快速开始
 
 ```console
-git clone https://github.com/YOUR-USERNAME/sorter-lab.git
+git clone https://github.com/Hmhhhh/sorter-lab.git
 cd sorter-lab
 python -m venv .venv
 # Windows：.venv\Scripts\activate
